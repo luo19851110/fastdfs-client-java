@@ -19,9 +19,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-/**
+/**客户端加载配置信息
  * Global variables
- *
+ * 
  * @author Happy Fish / YuQing
  * @version Version 1.11
  */

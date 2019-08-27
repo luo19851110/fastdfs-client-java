@@ -44,12 +44,12 @@ public class IniFileReader {
       // 优先从文件系统路径加载
       if (new File(filePath).exists()) {
         in = new FileInputStream(filePath);
-        //System.out.println("loadFrom...file path done");
+        //System.out.println(new File(filePath).getAbsolutePath());
       }
       // 从类路径加载
       else {
         in = classLoader().getResourceAsStream(filePath);
-        System.out.println(classLoader().getResource(filePath));
+        //System.out.println(classLoader().getResource(filePath));
       }
     } catch (Exception ex) {
       ex.printStackTrace();
