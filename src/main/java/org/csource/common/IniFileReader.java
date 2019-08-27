@@ -14,7 +14,7 @@ import java.util.Hashtable;
 
 /**
  * ini file reader / parser
- *
+ * 初始化加载配置文件实现类
  * @author Happy Fish / YuQing
  * @version Version 1.0
  */
@@ -49,7 +49,7 @@ public class IniFileReader {
       // 从类路径加载
       else {
         in = classLoader().getResourceAsStream(filePath);
-        //System.out.println("loadFrom...class path done");
+        System.out.println(classLoader().getResource(filePath));
       }
     } catch (Exception ex) {
       ex.printStackTrace();
